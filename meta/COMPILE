@@ -1,0 +1,76 @@
+
+apt install libtasn1-6-dev
+apt install libunbound-dev
+
+./configure --prefix=/opt/gnutls \
+  --sysconfdir=/opt/gnutls/conf \
+  --libdir=/opt/gnutls/lib \
+  --without-p11-kit
+
+configure: summary of build options:
+
+  version:              3.6.16 shared 58:2:28
+  Host/Target system:   x86_64-pc-linux-gnu
+  Build system:         x86_64-pc-linux-gnu
+  Install prefix:       /opt/gnutls
+  Compiler:             gcc
+  Valgrind:             no 
+  CFlags:               -g -O2
+  Library types:        Shared=yes, Static=no
+  Local libopts:        no
+  Local libtasn1:       no
+  Local unistring:      no
+  Use nettle-mini:      no
+  Documentation:        yes (manpages: yes)
+
+configure: External hardware support:
+
+  /dev/crypto:          no
+  Hardware accel:       x86-64
+  Padlock accel:        yes
+  Random gen. variant:  getrandom
+  PKCS#11 support:      no
+  TPM support:          no
+
+configure: Optional features:
+(note that included applications might not compile properly
+if features are disabled)
+
+  SSL3.0 support:       no
+  SSL2.0 client hello:  yes
+  Allow SHA1 sign:      no
+  DTLS-SRTP support:    yes
+  ALPN support:         yes
+  OCSP support:         yes
+  SRP support:          yes
+  PSK support:          yes
+  DHE support:          yes
+  ECDHE support:        yes
+  GOST support:         yes
+  Anon auth support:    yes
+  Heartbeat support:    yes
+  IDNA support:         no
+  Non-SuiteB curves:    yes
+  FIPS140 mode:         no
+  Strict DER time:	yes
+
+configure: Optional libraries:
+
+  Guile wrappers:       no
+  C++ library:          yes
+  DANE library:         yes
+  OpenSSL compat:       no
+
+configure: System files:
+
+  Trust store pkcs11:   
+  Trust store dir:      
+  Trust store file:     /etc/ssl/certs/ca-certificates.crt
+  Blacklist file:       
+  CRL file:             
+  Configuration file:   /etc/gnutls/config
+  DNSSEC root key file: /usr/share/dns/root.key
+
+
+
+
